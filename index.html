@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>École 221 — Gestion des inscriptions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div class="logo-text">
+        <span class="logo-title">École 221</span>
+        <span class="logo-sub">Gestion des inscriptions</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <!-- <a href="#" class="nav-item">
+        <i class="fas fa-th-large"></i>
+        <span>Tableau de bord</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fas fa-user-graduate"></i>
+        <span>Étudiants</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fas fa-book-open"></i>
+        <span>Formations</span>
+      </a> -->
+      <a href="#" class="nav-item active">
+        <i class="fas fa-file-alt"></i>
+        <span>Inscriptions</span>
+      </a>
+    </nav>
+  </aside>
+
+  <div class="main-wrapper">
+
+    <header class="topbar">
+      <div class="search-box">
+        <input type="text" placeholder="Rechercher..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="topbar-user">
+        <span>Bonjour administrateur</span>
+        <div class="avatar"><i class="fas fa-user"></i></div>
+      </div>
+    </header>
+
+    <main class="page-content">
+
+      <div class="page-header">
+        <h2>Liste des inscriptions</h2>
+        <div class="page-header-actions">
+          <button class="btn-restore" id="btnOpenDrawer">
+            <i class="fas fa-clock-rotate-left"></i> Archives</button>
+          <button class="btn-new" id="btnOpenAdd">
+            <i class="fas fa-plus"></i> Nouvelle inscription
+          </button>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <span class="filter-label">Filtrer</span>
+        <select class="filter-select">
+          <option value="">---Sélectionner par formation---</option>
+          <option value="developpement-web">Développement web</option>
+          <option value="developpement-mobile">Développement mobile</option>
+          <option value="marketing-digital">Marketing digital</option>
+          <option value="genie-logicielle">Génie logicielle</option>
+          <option value="design-graphique">Design graphique</option>
+          <option value="data-science">Data science</option>
+          <option value="referent-digital">Référent digital</option>
+          <option value="electronique">Électronique</option>
+        </select>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="inscriptions-table">
+          <thead>
+            <tr>
+              <th>PRÉNOM</th>
+              <th>NOM</th>
+              <th>ADRESSE</th>
+              <th>EMAIL</th>
+              <th>TÉLÉPHONE</th>
+              <th>FORMATION</th>
+              <th>DATE</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- <td>Fatou</td>
+              <td>Diop</td>
+              <td>Dakar, Plateau</td>
+              <td>fatoudiop@gmail.com</td>
+              <td>771111111</td>
+              <td>Développement web</td>
+              <td>15 Avr 2026</td>
+              <td class="actions-cell">
+                <button class="btn-icon btn-edit"><i class="fas fa-pen"></i></button>
+                <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+              </td> -->
+            </tr>
+            <tr>
+              <!-- <td>Moussa</td> -->
+              <!-- <td>Sow</td>
+              <td>Dakar, Médina</td>
+              <td>moussasow@gmail.com</td>
+              <td>771111112</td>
+              <td>Développement mobile</td>
+              <td>14 Avr 2026</td>
+              <td class="actions-cell">
+                <button class="btn-icon btn-edit"><i class="fas fa-pen"></i></button>
+                <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+              </td> -->
+            </tr>
+            <tr>
+              <!-- <td>Awa</td>
+              <td>Ndiaye</td>
+              <td>Thiès, Centre</td>
+              <td>awandiaye@gmail.com</td>
+              <td>771111113</td>
+              <td>Marketing digital</td>
+              <td>12 Avr 2026</td>
+              <td class="actions-cell">
+                <button class="btn-icon btn-edit"><i class="fas fa-pen"></i></button>
+                <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+              </td> -->
+            </tr>
+            <tr>
+              <!-- <td>Ibrahima</td>
+              <td>Fall</td>
+              <td>Saint-Louis</td>
+              <td>ibrahimafall@gmail.com</td>
+              <td>771111114</td>
+              <td>Génie logicielle</td>
+              <td>12 Avr 2026</td>
+              <td class="actions-cell">
+                <button class="btn-icon btn-edit"><i class="fas fa-pen"></i></button>
+                <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+              </td> -->
+            </tr>
+            <tr>
+              <!-- <td>Mariama</td>
+              <td>Ba</td>
+              <td>Dakar, Almadies</td>
+              <td>mariamaba@gmail.com</td>
+              <td>771111115</td>
+              <td>Design graphique</td>
+              <td>12 Avr 2026</td>
+              <td class="actions-cell">
+                <button class="btn-icon btn-edit"><i class="fas fa-pen"></i></button>
+                <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+              </td> -->
+            </tr>
+            <tr>
+              <!-- <td>Fatima</td>
+              <td>Ndiaye</td>
+              <td>Rufisque</td>
+              <td>fatimandiaye@gmail.com</td>
+              <td>771111116</td>
+              <td>Data science</td>
+              <td>14 Avr 2026</td>
+              <td class="actions-cell">
+                <button class="btn-icon btn-edit"><i class="fas fa-pen"></i></button>
+                <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+              </td> -->
+            </tr>
+            <tr>
+              <!-- <td>Adama</td>
+              <td>Lo</td>
+              <td>Ziguinchor</td>
+              <td>adamalo@gmail.com</td>
+              <td>771111117</td>
+              <td>Référent digital</td>
+              <td>15 Avr 2026</td>
+              <td class="actions-cell">
+                <button class="btn-icon btn-edit"><i class="fas fa-pen"></i></button>
+                <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+              </td> -->
+            </tr>
+            <tr>
+              <!-- <td>Nabou</td>
+              <td>Touré</td>
+              <td>Kaolack</td>
+              <td>naboutoure@gmail.com</td>
+              <td>771111118</td>
+              <td>Électronique</td>
+              <td>12 Avr 2026</td>
+              <td class="actions-cell">
+                <button class="btn-icon btn-edit"><i class="fas fa-pen"></i></button>
+                <button class="btn-icon btn-delete"><i class="fas fa-trash"></i></button>
+              </td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- modal nouvelle inscription -->
+  <div class="modal-overlay" id="modalAdd">
+    <div class="modal">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <h3 class="modal-title">Nouvelle inscription</h3>
+      <form class="modal-form" id="formAdd">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nom :</label>
+            <input type="text" id="addNom" placeholder="Nom" />
+            <span class="form-error" id="addNomError"></span>
+          </div>
+          <div class="form-group">
+            <label>Prénom :</label>
+            <input type="text" id="addPrenom" placeholder="Prénom" />
+            <span class="form-error" id="addPrenomError"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Adresse :</label>
+          <input type="text" id="addAdresse" placeholder="Adresse" />
+          <span class="form-error" id="addAdresseError"></span>
+        </div>
+        <div class="form-group">
+          <label>Email :</label>
+          <input type="email" id="addEmail" placeholder="Email" />
+          <span class="form-error" id="addEmailError"></span>
+        </div>
+        <div class="form-group">
+          <label>Téléphone :</label>
+          <input type="tel" id="addTelephone" placeholder="Téléphone" />
+          <span class="form-error" id="addTelephoneError"></span>
+        </div>
+        <div class="form-group">
+          <label>Formation :</label>
+          <select id="addFormation">
+            <option value="">-- Choisir une formation --</option>
+            <option value="developpement-web">Développement web</option>
+            <option value="developpement-mobile">Développement mobile</option>
+            <option value="marketing-digital">Marketing digital</option>
+            <option value="genie-logicielle">Génie logicielle</option>
+            <option value="design-graphique">Design graphique</option>
+            <option value="data-science">Data science</option>
+            <option value="referent-digital">Référent digital</option>
+            <option value="electronique">Électronique</option>
+          </select>
+          <span class="form-error" id="addFormationError"></span>
+        </div>
+        <button type="submit" class="btn-submit" id="submit-btn">Ajouter</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- modal modifier -->
+  <div class="modal-overlay" id="modalEdit">
+    <div class="modal">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <h3 class="modal-title">Modifier l'inscription</h3>
+      <form class="modal-form" id="formEdit">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nom :</label>
+            <input type="text" id="editNom" placeholder="Nom" />
+            <span class="form-error" id="editNomError"></span>
+          </div>
+          <div class="form-group">
+            <label>Prénom :</label>
+            <input type="text" id="editPrenom" placeholder="Prénom" />
+            <span class="form-error" id="editPrenomError"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Adresse :</label>
+          <input type="text" id="editAdresse" placeholder="Adresse" />
+          <span class="form-error" id="editAdresseError"></span>
+        </div>
+        <div class="form-group">
+          <label>Email :</label>
+          <input type="email" id="editEmail" placeholder="Email" />
+          <span class="form-error" id="editEmailError"></span>
+        </div>
+        <div class="form-group">
+          <label>Téléphone :</label>
+          <input type="tel" id="editTelephone" placeholder="Téléphone" />
+          <span class="form-error" id="editTelephoneError"></span>
+        </div>
+        <div class="form-group">
+          <label>Formation :</label>
+          <select id="editFormation">
+            <option value="">-- Choisir une formation --</option>
+            <option value="developpement-web">Développement web</option>
+            <option value="developpement-mobile">Développement mobile</option>
+            <option value="marketing-digital">Marketing digital</option>
+            <option value="genie-logicielle">Génie logicielle</option>
+            <option value="design-graphique">Design graphique</option>
+            <option value="data-science">Data science</option>
+            <option value="referent-digital">Référent digital</option>
+            <option value="electronique">Électronique</option>
+          </select>
+          <span class="form-error" id="editFormationError"></span>
+        </div>
+        <button type="submit" class="btn-submit">Enregistrer</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- modal suppression -->
+  <div class="modal-overlay" id="modalDelete">
+    <div class="modal modal-sm">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <div class="delete-icon-wrap">
+        <div class="delete-icon"><i class="fas fa-trash-alt"></i></div>
+      </div>
+      <h3 class="modal-title">Confirmer la suppression</h3>
+      <p class="modal-text">
+        Voulez-vous vraiment supprimer cet étudiant ?<br/>
+        Il sera déplacé dans les archives et pourra être restauré.
+      </p>
+      <div class="modal-actions">
+        <button class="btn-cancel" id="btnCancelDelete">Annuler</button>
+        <button class="btn-confirm-delete" id="btnConfirmDelete">Supprimer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal confirmation désarchivage -->
+  <div class="modal-overlay" id="modalRestore">
+    <div class="modal modal-sm">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <div class="delete-icon-wrap">
+        <div class="restore-icon"><i class="fas fa-rotate-left"></i></div>
+      </div>
+      <h3 class="modal-title">Confirmer le désarchivage</h3>
+      <p class="modal-text" id="restoreModalText">
+        Voulez-vous vraiment désarchiver cet étudiant ?<br/>
+        Il sera de nouveau visible dans la liste des inscriptions.
+      </p>
+      <div class="modal-actions">
+        <button class="btn-cancel" id="btnCancelRestore">Annuler</button>
+        <button class="btn-confirm-restore" id="btnConfirmRestore">Désarchiver</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- drawer archives -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <h3>Liste des etudiants supprimés</h3>
+      <button class="drawer-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="drawer-body"></div>
+    <div class="drawer-footer">
+      <button class="btn-bulk-restore" id="btnBulkRestore" disabled>
+        <i class="fas fa-rotate-left"></i> Desarchiver plusieurs</button>
+    </div>
+  </div>
+
+   <script type="module" src="./js/app.js"></script>
+
+</body>
+</html>
